@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <script src="https://kit.fontawesome.com/4912031e26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../stylesheet/estilo.css">
+    <title>BAGNA</title>
+</head>
+<body>
+    <header>
+        <div id="contenedor__header">
+            <label for="menu" class="header__burguerMenu">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </label>
+            <input type="checkbox" id="menu">
+            <nav class="header__menu">
+                <label for="menu" class="header__closeMenu">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </label>
+                <ul>
+                    <li>
+                        <a href="../pages/tienda.html">Tienda</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <a href="../index.html">
+                <img src="../assets/logo-flyer.png" class="header__logo">
+            </a>
+            <div class="header__menuDerecho">
+                <button class="btn" id="carrito" onclick="location.href='../pages/carrito.html'">
+                    <i class="fa-solid fa-bag-shopping fa-xl"></i>
+                    <span>Carrito</span>
+                </button>
+                <button class="btn" id="login" onclick="location.href='../pages/login.html'">
+                    <i class="fa-solid fa-user fa-xl"></i>
+                    <span>Login</span> 
+                </button>
+            </div>
+        </div>
+        
+    </header>
+    <main id="main__Tienda">
+        <a href="../index.html" class="main__linkVolverInicio">Volver</a>
+        
+        <table id="tabla__Productos">
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div>
+                
+                            <fieldset id="ordenar__Por">
+                                <!-- <legend>Ordenar por</legend> -->
+                                Ordenar por
+                                <select name="ordenar_Productos">
+                                    <option value="relevancia">Más relevantes</option>
+                                    <option value="menor_precio">Menor precio</option>
+                                    <option value="mayor_precio">Mayor precio</option>
+                                </select>
+                                
+            
+                            </fieldset>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="column__Categoria">
+                        <div>
+                            <h4>Categorías</h4>
+                            <ul>
+                                <li>
+                                    Todas
+                                </li>
+                                <li>
+                                    Carteras
+                                </li>
+                                <li>
+                                    Bolsos y Maletines
+                                </li>
+                                <li>
+                                    Mochilas
+                                </li>
+                                <li>
+                                    Riñoneras
+                                </li>
+                                <li>
+                                    Portanotebooks
+                                </li>
+                                <li>
+                                    Bandoleras
+                                </li>
+                                <li>
+                                    Cartucheras
+                                </li>
+                                <li>
+                                    Billeteras
+                                </li>
+                                <li>
+                                    Promociones
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <section>
+                
+                            <ol>
+                                <li>
+                                    <a href="producto.html">
+                                        <img src="../assets/carteraCrocoRoja.jpg" alt="">
+                                        <p>Cartera Croco Rojo</p>
+                                        <h4>$4000</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="producto.html">
+                                        <img src="../assets/cartera_total_black.jpg" alt="">
+                                        <p>Cartera Total Black</p>
+                                        <h4>$4200</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="producto.html">
+                                        <img src="../assets/bandolera-negra.jpg" alt="">
+                                        <p>Bandolera Negra con cadena</p>
+                                        <h4>$3000</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="producto.html">
+                                        <img src="../assets/bolso-mendiano-blanco.jpg" alt="">
+                                        <p>Bolso Blanco</p>
+                                        <h4>$5000</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="producto.html">
+                                        <img src="../assets/mochila_beige.jpg" alt="">
+                                        <p>Mochila Beige</p>
+                                        <h4>$4500</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="producto.html">
+                                        <img src="../assets/mochila-croco-negro.png" alt="">
+                                        <p>Mochila Croco Negro</p>
+                                        <h4>$4700</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="producto.html">
+                                        <img src="../assets/riñonera_negra.jpg" alt="">
+                                        <p>Riñonera Negra</p>
+                                        <h4>$3000</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="producto.html">
+                                        <img src="../assets/portanotebook_con_manija.jpg" alt="">
+                                        <p>Portanotebook con manija</p>
+                                        <h4>$3400</h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="producto.html">
+                                        <img src="../assets/mochi_metalizada.jpg" alt="">
+                                        <p>Mochila Silver Metalizado</p>
+                                        <h4>$4500</h4>
+                                    </a>
+                                </li>
+                            </ol>
+                        </section>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+
+
+        <div id="contenedorProductos">
+            
+        </div>
+        
+    </main>
+    <footer>
+        <div id="footer__contacto">
+            <div>
+                <p>Seguinos en:</p>
+                <ul>
+                    <li>
+                        <a href="http://www.facebook.com/bagna.handbags?utm_medium=copy_link" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/bagna.handbags?utm_medium=copy_link" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>escribinos por whatsapp</p>
+                <a href="https://api.whatsapp.com/send?phone=+54 261 6708408" target="_blank" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +54 261 6708408
+                </a>
+            </div>
+        </div>
+        <p class="footer__copyright">©2022 BAGNA</p>
+    </footer>
+</body>
+</html>

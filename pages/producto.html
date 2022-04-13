@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <script src="https://kit.fontawesome.com/4912031e26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../stylesheet/estilo.css">
+    <title>BAGNA</title>
+</head>
+<body>
+
+    <div id="grilla__producto">
+        <header>
+            <div id="contenedor__header">
+                <label for="menu" class="header__burguerMenu">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </label>
+                <input type="checkbox" id="menu">
+                <nav class="header__menu">
+                    <label for="menu" class="header__closeMenu">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </label>
+                    <ul>
+                        <li>
+                            <a href="../pages/tienda.html">Tienda</a>
+                        </li>
+                        <li>
+                            <a href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <a href="../index.html">
+                    <img src="../assets/logo-flyer.png" class="header__logo">
+                </a>
+                <div class="header__menuDerecho">
+                    <button class="btn" id="carrito" onclick="location.href='../pages/carrito.html'">
+                        <i class="fa-solid fa-bag-shopping fa-xl"></i>
+                        <span>Carrito</span>
+                    </button>
+                    <button class="btn" id="login" onclick="location.href='../pages/login.html'">
+                        <i class="fa-solid fa-user fa-xl"></i>
+                        <span>Login</span> 
+                    </button>
+                </div>
+            </div>
+            
+        </header>
+        <main>
+            <div id="contenido__producto">
+                <div id="imagen__principal">
+                    <img class="imagen__L" src="../assets/carteraCrocoRoja.jpg" alt="">
+                </div>
+                <div id="contenedor__muestra">
+                    <a href="">
+                        <img src="../assets/carteraCrocoRoja.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../assets/carteraCrocoRoja.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../assets/carteraCrocoRoja.jpg" alt="">
+                    </a>
+                </div>
+                <div id="info__producto">
+                    <h2>Cartera Croco Rojo</h2>
+                    <p id="precio">$4000</p>
+                    <p id="descripcion__Producto">Cartera confeccionada en charol negro y frente en croco rojo. Ideal para cualquier salida ocasional.</p>
+                    <h4 id="costo__Envio">Costo de envío: $900</h4>
+                    <p>Talle:</p>
+                    <select name="" id="talle" required>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                    <div id="contenedor__cantidad">
+                        <p>Cantidad:</p>
+                        <input type="number" id="cantidad" value="1" min="1" max="20" required>
+                    </div>
+                    <div id="contenedor__botones">
+                        <button class="boton__con__borde">Comprar ahora</button>
+                        <button class="boton__con__borde fondo__secundario">Agregar al carrito</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer__contacto">
+                <div>
+                    <p>Seguinos en:</p>
+                    <ul>
+                        <li>
+                            <a href="http://www.facebook.com/bagna.handbags?utm_medium=copy_link" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                                Facebook
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/bagna.handbags?utm_medium=copy_link" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                                Instagram
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>escribinos por whatsapp</p>
+                    <a href="https://api.whatsapp.com/send?phone=+54 261 6708408" target="_blank" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        +54 261 6708408
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copyright">©2022 BAGNA</p>
+        </footer>
+    </div>
+</body>
+</html>

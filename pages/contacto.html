@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <script src="https://kit.fontawesome.com/4912031e26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../stylesheet/estilo.css">
+    <title>BAGNA</title>
+</head>
+<body>
+    <header>
+        <div id="contenedor__header">
+            <label for="menu" class="header__burguerMenu">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </label>
+            <input type="checkbox" id="menu">
+            <nav class="header__menu">
+                <label for="menu" class="header__closeMenu">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </label>
+                <ul>
+                    <li>
+                        <a href="../pages/tienda.html">Tienda</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <a href="../index.html">
+                <img src="../assets/logo-flyer.png" class="header__logo">
+            </a>
+            <div class="header__menuDerecho">
+                <button class="btn" id="carrito" onclick="location.href='../pages/carrito.html'">
+                    <i class="fa-solid fa-bag-shopping fa-xl"></i>
+                    <span>Carrito</span>
+                </button>
+                <button class="btn" id="login" onclick="location.href='../pages/login.html'">
+                    <i class="fa-solid fa-user fa-xl"></i>
+                    <span>Login</span> 
+                </button>
+            </div>
+        </div>
+        
+    </header>
+    <main>
+        <div id="main__Formulario">
+            <a href="../index.html" class="main__linkVolverInicio">Volver</a>
+            <form action="" method="post" enctype="">
+                <fieldset>
+                    <h1>Contacto</h1> 
+                    <div>
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <input type="text" name="apellido" placeholder="Apellido" required>
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div>
+                        <input type="tel" name="phone" placeholder="Celular">
+                    </div>
+                    <div class="bloqueSexo">
+                        <p>Sexo</p>
+                        <input type="radio" name="sexo" id="femenino" value="femenino">
+                        <label for="femenino">Femenino</label>
+                        
+                        <input type="radio" name="sexo" id="masculino" value="masculino">
+                        <label for="masculino">Masculino</label>
+                        
+                        <input type="radio" name="sexo" id="no_binario" value="no_binario">
+                        <label for="no_binario">No binario</label>
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder="Deja tu mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <!-- centro la div utilizando dos span alrededor -->
+                        <span></span>
+                        <div id="bloqueBotones">
+                            <button type="reset">Limpiar Campos</button>
+                            <button type="submit">Enviar</button>
+                        </div>
+                        <span></span>
+                    </div>
+                    
+                    
+                </fieldset>
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+        <div id="footer__contacto">
+            <div>
+                <p>Seguinos en:</p>
+                <ul>
+                    <li>
+                        <a href="http://www.facebook.com/bagna.handbags?utm_medium=copy_link" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/bagna.handbags?utm_medium=copy_link" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>escribinos por whatsapp</p>
+                <a href="https://api.whatsapp.com/send?phone=+54 261 6708408" target="_blank" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +54 261 6708408
+                </a>
+            </div>
+        </div>
+        <p class="footer__copyright">©2022 BAGNA</p>
+    </footer>
+</body>
+</html>

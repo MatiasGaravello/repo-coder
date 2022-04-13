@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <script src="https://kit.fontawesome.com/4912031e26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../stylesheet/estilo.css">
+    <title>BAGNA</title>
+</head>
+<body>
+    <header>
+        <div id="contenedor__header">
+            <label for="menu" class="header__burguerMenu">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </label>
+            <input type="checkbox" id="menu">
+            <nav class="header__menu">
+                <label for="menu" class="header__closeMenu">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </label>
+                <ul>
+                    <li>
+                        <a href="../pages/tienda.html">Tienda</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <a href="../index.html">
+                <img src="../assets/logo-flyer.png" class="header__logo">
+            </a>
+            <div class="header__menuDerecho">
+                <button class="btn" id="carrito" onclick="location.href='../pages/carrito.html'">
+                    <i class="fa-solid fa-bag-shopping fa-xl"></i>
+                    <span>Carrito</span>
+                </button>
+                <button class="btn" id="login" onclick="location.href='../pages/login.html'">
+                    <i class="fa-solid fa-user fa-xl"></i>
+                    <span>Login</span> 
+                </button>
+            </div>
+        </div>
+        
+    </header>
+    <main id="main__Carrito">
+        <a href="../index.html" class="main__linkVolverInicio">Volver</a>
+        <h1 id="titulo__Carrito">Carrito de compras</h1>
+        <div>
+            
+                <table id="tabla__Carrito"> 
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="../assets/carteraCrocoRoja.jpg" alt="imagen producto">
+                                
+                            </td>
+                            <td>
+                                <p>Cartera Croco Rojo</p>
+                                <p>Talle M</p>
+                            </td>
+                            <td>
+                                <h4>$4000</h4> 
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <h4>$4000</h4> 
+                                
+                            </td>
+                            <td class="celda__Quitar__Item">
+                                <a href="">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../assets/bandolera-negra.jpg" alt="imagen producto">
+                                
+                            </td>
+                            <td>
+                                <p>Bandolera Negra con cadena </p> 
+                                <p>Talle S</p> 
+                            </td>
+                            <td>
+                                <h4>$3000</h4>
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <h4>$3000</h4>
+                            </td>
+                            <td class="celda__Quitar__Item">
+                                <a href="">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </a>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../assets/bolso-mendiano-blanco.jpg" alt="imagen producto">
+                                
+                            </td>
+                            <td>
+                                 
+                                <p>Bolso Blanco</p>
+                                <p>Talle M</p>
+                            </td>
+                            <td>
+                                <h4>$5000</h4> 
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <h4>$5000</h4> 
+                            </td>
+                            <td class="celda__Quitar__Item">
+                                <a href="">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4"></td>
+                            <th>
+                                <p>Total $12000</p>  
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+            
+            <div id="bloque__Botones">
+                <button>Seguir comprando</button> 
+                <button>Pagar</button> 
+            </div>
+            
+        </div>
+        
+    </main>
+    <footer>
+        <div id="footer__contacto">
+            <div>
+                <p>Seguinos en:</p>
+                <ul>
+                    <li>
+                        <a href="http://www.facebook.com/bagna.handbags?utm_medium=copy_link" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/bagna.handbags?utm_medium=copy_link" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>escribinos por whatsapp</p>
+                <a href="https://api.whatsapp.com/send?phone=+54 261 6708408" target="_blank" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +54 261 6708408
+                </a>
+            </div>
+        </div>
+        <p class="footer__copyright">©2022 BAGNA</p>
+    </footer>
+</body>
+</html>
