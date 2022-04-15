@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/4912031e26.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../stylesheet/estilo.css">
     <title>BAGNA</title>
@@ -48,22 +49,18 @@
     </header>
     <main>
         <div id="main__Formulario">
-            <a href="../index.html" class="main__linkVolverInicio">Volver</a>
             <form action="" method="post" enctype="">
                 <fieldset>
                     <h1>Contacto</h1> 
-                    <div>
-                        <input type="text" name="nombre" placeholder="Nombre" required>
-                    </div>
-                    <div>
-                        <input type="text" name="apellido" placeholder="Apellido" required>
-                    </div>
-                    <div>
-                        <input type="email" name="email" placeholder="Correo electrónico" required>
-                    </div>
-                    <div>
-                        <input type="tel" name="phone" placeholder="Celular">
-                    </div>
+                    
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                
+                    <input type="tel" name="phone" placeholder="Celular">
+                    
                     <div class="bloqueSexo">
                         <p>Sexo</p>
                         <input type="radio" name="sexo" id="femenino" value="femenino">
@@ -75,20 +72,13 @@
                         <input type="radio" name="sexo" id="no_binario" value="no_binario">
                         <label for="no_binario">No binario</label>
                     </div>
-                    <div>
-                        <textarea name="message" placeholder="Deja tu mensaje" cols="30" rows="10"></textarea>
-                    </div>
-                    <div>
-                        <!-- centro la div utilizando dos span alrededor -->
-                        <span></span>
-                        <div id="bloqueBotones">
-                            <button type="reset">Limpiar Campos</button>
-                            <button type="submit">Enviar</button>
-                        </div>
-                        <span></span>
-                    </div>
                     
-                    
+                    <textarea name="message" placeholder="Deja tu mensaje" cols="30" rows="10"></textarea>
+                
+                    <div id="bloqueBotones">
+                        <button type="reset" id="btn__Reset">Limpiar Campos</button>
+                        <button type="submit">Enviar</button>
+                    </div>
                 </fieldset>
             </form>
         </div>

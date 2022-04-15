@@ -28,6 +28,11 @@ main {
     grid-area: main;
 }
 
+.imagen__con__borde {
+    border: solid 1px rgb(233, 233, 233);
+    border-radius: 6px;
+}
+
 /***************************** TRANSICIONES Y ANIMACIONES ********************************/
 
 
@@ -38,14 +43,14 @@ main {
 header {
     grid-area: header;
     background-color: rgba(251, 248, 241, 0.95);
-    position: fixed;
-    
+    position: sticky;
+    top: 0;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     /* height: 60px; */
     width: 100%;
     z-index: 999;
     animation: fadeIn;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 #contenedor__header {
@@ -61,14 +66,6 @@ header {
 .header__logo {
     width: 150px;
 }
-
-/* #contenedor__header ul{
-    display: none;
-    position: absolute;
-    background-color: aqua;
-    touch-action: auto;
-} */
-
 
 .header__menuDerecho {
     white-space: nowrap;
@@ -370,7 +367,7 @@ footer div p {
     }
 
     #publicidad {
-        margin-top: -70px;
+        margin-top: -89px;
     }
 
     #novedades {
@@ -420,7 +417,11 @@ footer div p {
 #imagen__principal {
     max-width: 50%;
     margin: auto;
-    
+    transition: all .2s;
+}
+
+#imagen__principal:hover {
+    transform: scale(1.5);
 }
 
 #imagen__principal img {
@@ -437,12 +438,16 @@ footer div p {
 
 #contenedor__muestra a {
     max-width: 20%;
-    
 }
 
 #contenedor__muestra a img {
     border: solid 1px rgb(233, 233, 233);
     border-radius: 6px;
+    /* transition: all .2s; */
+}
+
+#contenedor__muestra a img:hover {
+    border-color: black;
 }
 
 #info__producto {
@@ -498,6 +503,14 @@ footer div p {
     row-gap: 6px;
 }
 
+#info__producto #contenedor__botones button {
+    transition: all .3s;
+}
+
+#info__producto #contenedor__botones button:hover {
+    opacity: 0.7;
+}
+
 /*************** TABLET - DESKTOP ****************/
 
 @media screen and (min-width: 768px) {
@@ -510,6 +523,8 @@ footer div p {
         align-items: center;
         width: 70%;
         height: 68vh;
+        animation: fadeInLeft;
+        animation-duration: .5s;
     }
 
     #contenedor__muestra {
@@ -517,7 +532,7 @@ footer div p {
         flex-direction: column;
         width: 10%;
         align-items: center;
-        justify-content: space-around;
+        /* justify-content:space-around; */
     }
 
     #contenedor__muestra a {
@@ -558,72 +573,75 @@ footer div p {
 
 /***************************** contacto.html  ********************************/
 
-.main__linkVolverInicio {
-    text-decoration: underline;
-    float: left;
-    padding: 10px;
-}
-
 #main__Formulario {
     padding: 20px;
     text-align: center;
+    margin: 30px auto;
     color: #292929;
+    animation: fadeInLeft;
+    animation-duration: .5s;
 }
 
 #main__Formulario form {
-    clear: both;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
 
 #main__Formulario h1 {
     text-transform: uppercase;
     color: #292929;
-    margin: 50px auto 50px auto;
+    margin: 30px auto;
 }
 
 #main__Formulario fieldset {
     border: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
 }
 
 #main__Formulario input[type="text"], #main__Formulario input[type="email"], 
 #main__Formulario input[type="tel"] {
     padding: 10px;
-    margin: 10px;
-    width: 50%;
-    max-width: 400px;
-    
+    /* margin: 10px; */
+    /* width: 100%; */
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .bloqueSexo p {
     margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 .bloqueSexo label{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding-left: 5px;
     padding-right: 30px;
-}
+} 
 
 #main__Formulario textarea {
-    width: 50%;
-    max-width: 400px;
+    /* width: 50%; */
+    /* max-width: 400px; */
     padding: 10px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     resize: none;
 }
 
 /* es la div que contiene los botones */
 #bloqueBotones {
-    max-width: 400px;
-    width: 50%;
+    /* max-width: 400px;
+    width: 50%; */
     text-align: right;
-    display: inline-block;
-    padding: 10px;
-    margin-right: -20px;
+    /* display: inline-block; */
+    /* padding: 10px; */
+    /* margin-right: -20px; */
 }
 
 #main__Formulario button{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: 5px;
     background-color: #292929;
     border-radius: 3px;
@@ -632,6 +650,16 @@ footer div p {
     font-size: 13px;
     color: #fff;
     text-transform: uppercase;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+#main__Formulario button:hover {
+    opacity: 0.7;
+}
+
+#main__Formulario #btn__Reset {
+    background-color: #c262cb;
 }
 
 /***************************** FIN contacto.html  ********************************/
@@ -642,7 +670,6 @@ footer div p {
 #main__Login {
     color: #292929;
     padding: 20px;
-    
 }
 
 .main__Login__Registro {
@@ -654,6 +681,8 @@ footer div p {
     text-align: center;
     min-width: 240px;
     max-width: 390px;
+    animation: fadeInLeft;
+    animation-duration: .5s;
 }
 
 .main__Login__Registro fieldset {
@@ -661,6 +690,7 @@ footer div p {
     border-radius: 8px;
     border: none;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    
 }
 
 
@@ -685,6 +715,11 @@ footer div p {
     color: #fff;
     text-transform: uppercase;
     width: 100%;
+    transition: all .3s;
+}
+
+#main__Login button:hover {
+    opacity: 0.7;
 }
 
 #main__Login input {
@@ -721,11 +756,12 @@ footer div p {
 
 .contenedor__EnLinea button {
     width: max-content !important;
-    width: 50%;
     box-sizing: border-box;
-    /* margin: 0 10px; */
-    
 } 
+
+.contenedor__EnLinea #btn__Reset {
+    background-color: #c262cb;
+}
 
 /***************************** FIN login.html  ********************************/
 
@@ -736,6 +772,8 @@ footer div p {
     color: #292929;
     /* background-color: #F5F5F5; */
     padding: 20px;
+    animation: fadeInLeft;
+    animation-duration: .5s;
 }
 
 #titulo__Carrito {
@@ -789,6 +827,10 @@ footer div p {
    
 }
 
+#main__Carrito button:first-child{
+    background-color: #c262cb;
+}
+
 #main__Carrito div{
     width: fit-content;
     margin-left: auto;
@@ -810,6 +852,8 @@ footer div p {
     color: #292929;
     /* background-color: #F5F5F5; */
     padding: 20px;
+    animation: fadeInLeft;
+    animation-duration: .5s;
 }
 
 #tabla__Productos {
@@ -842,11 +886,14 @@ footer div p {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 14px;
+    transition: all .2s;
 }
 
 /* simulo link en Categorías */
 #column__Categoria ul li:hover {
     cursor:pointer;
+    font-weight: bold;
+    transform: scale(1.05);
 }
 
 #ordenar__Por {
@@ -874,8 +921,14 @@ footer div p {
     position: relative;
     /* border: solid 1px; */
     margin: 15px;
+    transition: all .2s;
 }
 
+#tabla__Productos section ol li:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
 
 #tabla__Productos section ol li img {
@@ -884,6 +937,8 @@ footer div p {
     object-fit:cover;
     text-align: center;
 }
+
+
 
 #tabla__Productos section ol li p {
     margin-top: 8px;
