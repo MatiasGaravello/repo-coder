@@ -194,28 +194,34 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: small;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-around;
-    
+    padding: 10px 0;
+    font-size: 0.7rem;
 }
 
 footer div p {
     text-transform: uppercase;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     color: #292929;
-    
+    /* font-size: 0.7rem; */
 }
 
 #footer__contacto {
     display: flex;
     justify-content: center;
-    column-gap: 15px;
+    column-gap: 30px;
     padding: 0 10px;
+    width: 100%;
 }
 
 #footer__contacto a {
     color:#8a8a8a;
-    font-size: 14px;
+    /* font-size: 0.7rem; */
+}
+
+#footer__contacto div {
+    text-align: right;
 }
 
 #footer__contacto div ul li {
@@ -226,9 +232,18 @@ footer div p {
 
 .footer__copyright {
     text-transform: uppercase;
-    font-size: 12px;
+    /* font-size: 12px; */
     text-align: center;
     color:#8a8a8a;
+    margin: 0;
+}
+
+/*************** TABLET ****************/
+
+@media screen and (min-width: 600px) {
+    footer {
+        font-size: 0.8rem;
+    }
 }
 
 
@@ -258,7 +273,7 @@ footer div p {
       "novedades"
       "atributos"
       "footer";
-    grid-template-rows: minmax(60px, max-content) 1fr auto auto 130px; 
+    grid-template-rows: minmax(60px, max-content) 1fr auto auto auto; 
     grid-template-columns: 100%;
     row-gap: 30px;
     
@@ -282,49 +297,55 @@ footer div p {
     
 }
 
+#novedades__mobile {
+    grid-area: novedades;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: stretch;
+    
+    
+}
+
+#novedades__mobile div {
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+} 
+
+#novedades__mobile div p {
+    flex-grow: 2;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+#novedades__mobile div a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+} 
+
+/********************** CAROUSEL **********************/
+
 #novedades #carouselNovedades {
     width: 30% !important;
-    
+    display: none;
 }
 
 #novedades #carouselNovedades .carousel-inner {
     text-align: center;
-    /* text-transform: uppercase; */
 }
  
 #novedades #carouselNovedades .carousel-inner .carousel-item div {
     padding: 10px;
 }
 
+/********************** FIN CAROUSEL **********************/
 
-
-
-/* #carouselNovedades .carousel-item img {
-    object-fit: cover;
-}   */
-
-
-/* 
-#novedades div {
-    width: 30%;
-    height: auto;
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
-} */
-/*
-#novedades div p {
-    flex-grow: 2;
-    margin-top: 9px;
-    margin-bottom: 9px;
-}
-
-#novedades div a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-} */
 
 #atributos {
     grid-area: atributos;
@@ -370,19 +391,17 @@ footer div p {
 
 /*************** TABLET ****************/
 
-/* @media screen and (min-width: 600px) {
-    #novedades {
-        flex-wrap: nowrap;
-        overflow: scroll;
-        overflow-y: hidden;
-        width: 70%;
-        max-width: 469px;
+@media screen and (min-width: 600px) {
+    #novedades__mobile {
+        display: none;
     }
 
-    #novedades div {
-        min-width: 140px;
+    #novedades #carouselNovedades {
+        display: block;
     }
-} */
+}
+
+
 
 /*************** DESKTOP ****************/
 
@@ -722,7 +741,6 @@ footer div p {
 
 .main__Login__Registro input{
     padding: 10px;
-    /* margin: 10px; */
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
