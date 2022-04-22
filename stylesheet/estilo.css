@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 }
+
+
 
 /* html, body {
     max-width: 100%;
@@ -230,7 +233,7 @@ header .header__menu ul li {
 /***************************** FIN HEADER  ********************************/
 
 /***************************** FOOTER ********************************/
-
+/* 
 footer {
     grid-area: footer;
     border-top: 1px dotted #d3d3d3;
@@ -245,9 +248,9 @@ footer {
 
 footer div p {
     text-transform: uppercase;
-    /* margin-bottom: 10px; */
+   
     color: #292929;
-    /* font-size: 0.7rem; */
+   
 }
 
 #footer__contacto {
@@ -260,7 +263,7 @@ footer div p {
 
 #footer__contacto a {
     color:#8a8a8a;
-    /* font-size: 0.7rem; */
+   
 }
 
 #footer__contacto div {
@@ -275,11 +278,11 @@ footer div p {
 
 .footer__copyright {
     text-transform: uppercase;
-    /* font-size: 12px; */
+   
     text-align: center;
     color:#8a8a8a;
     margin: 0;
-}
+} */
 
 /*************** TABLET ****************/
 
@@ -325,6 +328,18 @@ footer div p {
 #novedades {
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+#atributos h5 {
+    font-size: 0.9rem;
+}
+
+#atributos .card {
+    font-size: 0.8rem;
+}
+
+#atributos .card img {
+    width: 50px;
 }
 
 /* #publicidad {
