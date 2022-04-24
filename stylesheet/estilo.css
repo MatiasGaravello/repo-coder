@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    
+}
+
+html {
     font-size: 12px;
 }
 
@@ -42,6 +46,17 @@ main {
     border-radius: 6px;
 }
 
+/*************** TABLET ****************/
+/* 
+@media screen and (min-width: 768px) {
+    * {
+        font-size: 14px;
+    }
+} */
+
+/*************** END TABLET ****************/
+
+
 /***************************** TRANSICIONES Y ANIMACIONES ********************************/
 
 
@@ -51,13 +66,16 @@ main {
 header {
     grid-area: header;
     background-color: rgba(251, 248, 241, 0.95);
-    position: sticky;
-    top: 0;
+    
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     width: 100%;
     z-index: 999;
     animation: fadeIn;
     animation-duration: 2s;
+}
+
+header .container-fluid {
+    justify-content: space-between !important;
 }
 
 header #navbarNav {
@@ -81,7 +99,16 @@ header #navbarNav {
     color: #292929;
 }
 
+@media screen and (min-width: 992px) {
+    header {
+        height: 80px;
+        
+    }
 
+    .header__menuDerecho button span {
+        display: inline;
+    }
+}
 
 /* 
 header {
@@ -180,6 +207,10 @@ header .header__menu ul li {
     border-radius: 5px;
     padding: 0.5rem;
 } */
+
+/*************** TABLET ****************/
+
+
 
 /*************** DESKTOP ****************/
 
@@ -330,6 +361,10 @@ footer div p {
     margin-bottom: 40px;
 }
 
+#atributos {
+    max-width: 540px;
+}
+
 #atributos h5 {
     font-size: 0.9rem;
 }
@@ -454,7 +489,11 @@ footer div p {
 
 /*************** TABLET ****************/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
+    
+    #atributos {
+        max-width: 800px;
+    }
     /* #novedades__mobile {
         display: none;
     }
