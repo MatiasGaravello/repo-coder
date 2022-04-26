@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="../stylesheet/estilo.css">
     <title>BAGNA</title>
 </head>
-<body>
+<body class="h-100">
 
-    <div id="grilla__producto">
+    <!-- <div id="grilla__producto"> -->
         <header class="container-fluid align-items-center sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light h-100">
                 <div class="container-fluid row-cols-lg-3">
@@ -43,123 +43,110 @@
             </nav>
         </header>
         <main>
-            <!-- <div id="contenido__producto" class="container">
-                <div id="imagen__principal">
-                    <img class="imagen__L" src="../assets/carteraCrocoRoja.jpg" alt="">
-                </div>
-                <div id="contenedor__muestra">
-                    <a href="">
-                        <img src="../assets/carteraCrocoRoja.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../assets/carteraCrocoRoja.jpg" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../assets/carteraCrocoRoja.jpg" alt="">
-                    </a>
-                </div>
-                <div id="info__producto" class="container">
+            <div class="row row-cols-1 p-md-5" id="contenedor-producto">
+                <div class="col-md-7">
                     <div class="row">
-                        <div>
-                            <h2>Cartera Croco Rojo</h2>
-                            <p id="precio">$4000</p>
-                            <p id="descripcion__Producto">Cartera confeccionada en charol negro y frente en croco rojo. Ideal para cualquier salida ocasional.</p>
-                            <h4 id="costo__Envio">Costo de envío: $900</h4>
-                            <p>Talle:</p>
-                            <select name="" id="talle" required>
-                                <option value="s">S</option>
-                                <option value="m">M</option>
-                                <option value="l">L</option>
-                            </select>
-                            <div id="contenedor__cantidad">
-                                <p>Cantidad:</p>
-                                <input type="number" id="cantidad" value="1" min="1" max="20" required>
-                            </div>
-                            <div id="contenedor__botones">
-                                <button class="boton__con__borde btn btn-primary">Comprar ahora</button>
-                                <button class="boton__con__borde btn btn-dark">Agregar al carrito</button>
+                        <div class="col-2">
+                            <div class="d-none d-md-flex flex-column justify-content-around h-100">
+                                <a href="">
+                                    <img src="../assets/imagen-producto-1.jpg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="../assets/imagen-producto-2.jpg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="../assets/imagen-producto-3.jpg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="../assets/imagen-producto-4.jpg" alt="">
+                                </a>
+                                
                             </div>
                         </div>
-
+                        <div class="col-10">
+                            <div class="d-none d-md-inline">
+                                <img class="imagen__L" src="../assets/imagen-producto-1.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
-
-
-                   
                     
                 </div>
-            </div> -->
-            <div class="card border-0 mb-5">
-                <!-- <div class="card-body">
-                  <h4 class="card-title">Mini Bag Riñonera 2 en 1</h4>
-                </div> -->
-                <!-- <img src="../assets/carteraCrocoRoja.jpg" class="card-img-bottom" alt="..."> -->
-                
-                
-                <div id="carousel-producto" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel-producto" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carousel-producto" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carousel-producto" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carousel-producto" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/imagen-producto-1.jpg" class="d-block w-100" alt="...">
+                <div class="col-md-5">
+                    <div class="card border-0 mb-5 ms-auto me-auto" id="tarjeta-info-producto">
+                        <!-- CAROUSEL -->
+                        <!-- muestro carousel a partir de 768px -->
+                        <div id="carousel-producto" class="carousel carousel-dark slide d-md-none" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel-producto" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel-producto" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel-producto" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel-producto" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/imagen-producto-1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/imagen-producto-2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/imagen-producto-3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/imagen-producto-4.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-producto" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-producto" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../assets/imagen-producto-2.jpg" class="d-block w-100" alt="...">
+        
+                        <!-- END CAROUSEL -->
+        
+                        <div class="card-body">
+                            <h4 class="card-title">Mini Bag Riñonera 2 en 1</h4>
+                            <p class="fs-1">$4000</p>
+                            <p class="fs-5">Si así es, cambiándole la posición de la correa la podes usar como Riñonera o solo como Bandolera. Vos elegí la opción que más te guste según tu outfit.</p>
+                            <p class="fw-bold">
+                                <i class="fa-solid fa-truck"></i>
+                                Costo de envío: $900
+                            </p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Talle</option>
+                                <option value="1">Talle: S</option>
+                                <option value="2">Talle: M</option>
+                                <option value="3">Talle: L</option>
+                            </select>
+                            <div class="d-flex mt-4 mb-4 align-items-center">
+                                <p class="m-0 pe-3">Cantidad:</p>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+            
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary text-uppercase p-3" type="button">Comprar ahora</button>
+                                <button class="btn btn-secondary text-uppercase p-3" type="button">Agregar al carrito</button>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../assets/imagen-producto-3.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/imagen-producto-4.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-producto" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-producto" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Mini Bag Riñonera 2 en 1</h4>
-                    <p class="fs-1">$4000</p>
-                    <p class="fs-5">Si así es, cambiándole la posición de la correa la podes usar como Riñonera o solo como Bandolera. Vos elegí la opción que más te guste según tu outfit.</p>
-                    <p class="fw-bold">
-                        <i class="fa-solid fa-truck"></i>
-                        Costo de envío: $900
-                    </p>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Talle</option>
-                        <option value="1">Talle: S</option>
-                        <option value="2">Talle: M</option>
-                        <option value="3">Talle: L</option>
-                    </select>
-                    <div class="d-flex mt-4 mb-4 align-items-center">
-                        <p class="m-0 pe-3">Cantidad:</p>
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1" selected>1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                        </select>
-    
-                    </div>
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-primary text-uppercase p-3" type="button">Comprar ahora</button>
-                        <button class="btn btn-primary text-uppercase p-3" type="button">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
+
+            
         </main>
-        <footer>
+        <footer class="footer-especial">
             <div class="container-fluid pt-3 fs-6 border-top text-center">
                 <div class="row row-cols-2 justify-content-center justify-content-lg-end">
                     <div class="col col-auto text-end">
@@ -195,7 +182,7 @@
             </div>
             
         </footer>
-    </div>
+    <!-- </div> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

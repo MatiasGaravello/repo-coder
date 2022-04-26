@@ -114,6 +114,20 @@ header #navbarNav {
     }
 }
 
+/***************************** FOOTER ********************************/
+
+/* mantiene el footer en el bottom del viewport, en las páginas donde el alto del body es menor al del viewport */
+@media screen and (min-width: 768px) {
+    .footer-especial {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 133px;
+    }
+}
+
+
+
 /***************************** index.html  ********************************/
 
 #grilla__index {
@@ -157,6 +171,25 @@ header #navbarNav {
 /*****************************FIN index.html  ********************************/
 
 /***************************** producto.html  ********************************/
+
+#tarjeta-info-producto {
+    max-width: 450px;
+}
+
+#contenedor-producto {
+    max-width: 1003px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    #tarjeta-info-producto {
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+
+    #contenedor-producto {
+        margin: 5rem auto 0 auto;
+    }
+}
 /* .dropdown-toggle::after {
     display: inline-block;
     width: 0;
