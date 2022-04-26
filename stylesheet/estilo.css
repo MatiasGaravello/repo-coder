@@ -78,7 +78,6 @@ main {
 header {
     grid-area: header;
     background-color: rgba(251, 248, 241, 0.95);
-    
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     width: 100%;
     z-index: 999;
@@ -136,7 +135,6 @@ header #navbarNav {
 }
 
 
-
 /***************************** index.html  ********************************/
 
 #grilla__index {
@@ -187,8 +185,6 @@ header #navbarNav {
 
 #contenedor-producto {
     max-width: 966px;
-    /* animation: fadeInLeft;
-    animation-duration: .5s; */
 }
 
 @media screen and (min-width: 768px) {
@@ -201,178 +197,6 @@ header #navbarNav {
         margin: 5rem auto 0 auto;
     }
 }
-/* .dropdown-toggle::after {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: .3em;
-    vertical-align: middle;
-    content: "";
-    border-top: .3em solid;
-    border-right: .3em solid transparent;
-    border-left: .3em solid transparent;
-    float: right;
-    margin-top: 8px;
-} */
-
-/* #grilla__producto {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-    grid-template-rows: minmax(60px, max-content) auto 130px; 
-    grid-template-columns: 100%;
-    row-gap: 30px;
-    
-}
-
-#grilla__producto #contenido__producto {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    max-width: 432px;
-    margin: auto;
-    column-gap: 10px;
-}
-
-#imagen__principal {
-    max-width: 50%;
-    margin: auto;
-    transition: all .2s;
-}
-
-#imagen__principal:hover {
-    transform: scale(1.5);
-}
-
-#imagen__principal img {
-    border: solid 1px rgb(233, 233, 233);
-    border-radius: 6px;
-}
-
-#contenedor__muestra {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    column-gap: 20px;
-}
-
-#contenedor__muestra a {
-    max-width: 20%;
-}
-
-#contenedor__muestra a img {
-    border: solid 1px rgb(233, 233, 233);
-    border-radius: 6px;
-    
-}
-
-#contenedor__muestra a img:hover {
-    border-color: black;
-}
-
-#info__producto {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 7px;
-   
-}
-
-#info__producto #precio {
-    font-size: x-large;
-}
-
-#info__producto #talle {
-  
-    padding: 5px 0;
-    width: 100%;
-}
-
-#info__producto #contenedor__cantidad {
-    display: flex;
-    justify-content:space-between;
-    font-size: medium;
-    margin: 10px 0;
-    align-items: center;
-}
-
-#info__producto #cantidad {
-    width: 100%;
-    padding: 5px 0;
-}
-
-#info__producto #contenedor__botones {
-    display: flex;
-    flex-direction: column;
-    row-gap: 6px;
-}
-
-#info__producto #contenedor__botones button {
-    transition: all .3s;
-}
-
-#info__producto #contenedor__botones button:hover {
-    opacity: 0.7;
-} */
-
-/*************** TABLET - DESKTOP ****************/
-/* 
-@media screen and (min-width: 768px) {
-    
-    #grilla__producto #contenido__producto {
-        flex-direction: row;
-        max-width: 1000px;
-        min-width: 722px;
-        padding: 10px;
-        align-items: center;
-        width: 70%;
-        height: 68vh;
-        animation: fadeInLeft;
-        animation-duration: .5s;
-    }
-
-    #contenedor__muestra {
-        order: -1;
-        flex-direction: column;
-        width: 10%;
-        align-items: center;
-        
-    }
-
-    #contenedor__muestra a {
-        max-width: 60px;
-        
-        margin: 10px 0;
-       
-    }
-
-    #imagen__principal {
-        margin: 0;
-        width: 45%;
-        text-align: center;
-    }
-
-    #imagen__principal img{
-        max-width: 300px;
-        width: 90%;
-        
-    }
-
-    #info__producto {
-        row-gap: 15;
-        width: 45%;
-        padding: 20px;
-        border-radius: 8px;
-        border: none;
-        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-    }
-
- */
-
-/* } */
-
 
 /***************************** FIN producto.html  ********************************/
 
@@ -412,8 +236,6 @@ header #navbarNav {
 #main__Formulario input[type="text"], #main__Formulario input[type="email"], 
 #main__Formulario input[type="tel"] {
     padding: 10px;
-    /* margin: 10px; */
-    /* width: 100%; */
     box-sizing: border-box;
     width: 100%;
 }
@@ -423,31 +245,21 @@ header #navbarNav {
 }
 
 .bloqueSexo label{
-    /* margin-top: 10px; */
     padding-left: 5px;
     padding-right: 30px;
 } 
 
 #main__Formulario textarea {
-    /* width: 50%; */
-    /* max-width: 400px; */
     padding: 10px;
-    /* margin-top: 20px; */
     resize: none;
 }
 
 /* es la div que contiene los botones */
 #bloqueBotones {
-    /* max-width: 400px;
-    width: 50%; */
     text-align: right;
-    /* display: inline-block; */
-    /* padding: 10px; */
-    /* margin-right: -20px; */
 }
 
 #main__Formulario button{
-    /* margin-top: 20px; */
     margin-left: 5px;
     background-color: #292929;
     border-radius: 3px;
@@ -575,7 +387,6 @@ header #navbarNav {
 
 #main__Carrito {
     color: #292929;
-    /* background-color: #F5F5F5; */
     padding: 20px;
     animation: fadeInLeft;
     animation-duration: .5s;
@@ -592,11 +403,9 @@ header #navbarNav {
 }
 
 #tabla__Carrito td, #tabla__Carrito th {
-    /* border: solid 1px; */
     text-align: center;
     vertical-align: middle;
     padding: 10px 30px;
-    /* background-color: rgba(230, 230, 230, 0.2); */
     border-bottom: solid 1px rgb(230, 229, 229);
 }
 
@@ -679,8 +488,6 @@ header #navbarNav {
 }
 
 #column__Categoria div{
-    /* background-color: #F5F5F5; */
-    /* margin-top: 20px; */
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -707,7 +514,6 @@ header #navbarNav {
     padding: 10px 0;
     font-size: 14px;
     font-weight: bold;
-    /* margin-right: 20px; */
 }
 
 #ordenar__Por select{
@@ -719,12 +525,10 @@ header #navbarNav {
     list-style-type: none;
     display: inline-block;
     text-align: center;
-    /* padding: 20px; */
     width: 200px;
     height: 300px;
     vertical-align: top;
     position: relative;
-    /* border: solid 1px; */
     margin: 15px;
     transition: all .2s;
 }
@@ -751,8 +555,6 @@ header #navbarNav {
 }
 
 #tabla__Productos section ol li h4 {
-    /* position: relative; */
-    /* bottom: 0; */
     position: absolute;
     text-align: center;
     bottom: 0px;
