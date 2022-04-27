@@ -75,3 +75,28 @@ main {
 
 .cursor-pointer {
   cursor: pointer; }
+
+/***************************** TRANSICIONES Y ANIMACIONES ********************************/
+.transition-regular {
+  transition: all 0.3s; }
+
+/* efecto 3d */
+.threed:hover {
+  box-shadow: 1px 1px #e0e2e4, 2px 2px #e0e2e4, 3px 3px #e0e2e4;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px); }
+
+/* agrandar */
+.grow:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2); }
+
+.border-fade:hover {
+  border: 1px solid #0d6efd !important; }
+
+.fadeInLeft {
+  animation: fadeInLeft;
+  animation-duration: .5s; }
+
+/***************************** FIN TRANSICIONES Y ANIMACIONES ********************************/
