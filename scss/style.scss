@@ -1,49 +1,8 @@
-@import "header";
-@import "index";
+@import 'general';
+@import 'header';
+@import 'index';
+@import 'variables';
 
-$font-default:'Roboto', sans-serif;
-$borde:solid 1px rgb(233, 233, 233);
-$font-color: #292929;
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: $font-default;
-    // color: $font-color;
-}
-
-html {
-    font-size: 12px;
-}
-
-a {
-    text-decoration: none;
-    color: $font-color;
-}
-
-img {    
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-}
-
-li {
-    list-style-type: none;
-}
-
-main {
-    grid-area: main;
-}
-
-.imagen__con__borde {
-    border: $borde;
-    border-radius: 6px;
-}
-
-.cursor-pointer {
-    cursor: pointer;
-}
 
 /***************************** TRANSICIONES Y ANIMACIONES ********************************/
 
@@ -52,26 +11,24 @@ main {
 }
 
 /* efecto 3d */
-.threed:hover
-{
+.threed:hover {
     box-shadow:
-    1px 1px #e0e2e4,
-    2px 2px #e0e2e4,
-    3px 3px #e0e2e4;
+        1px 1px #e0e2e4,
+        2px 2px #e0e2e4,
+        3px 3px #e0e2e4;
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
 }
 
 /* agrandar */
-.grow:hover
-{
+.grow:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
 
 .border-fade:hover {
-    border: 1px solid #0d6efd!important;
+    border: 1px solid #0d6efd !important;
 }
 
 .fadeInLeft {

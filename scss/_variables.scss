@@ -1,0 +1,22 @@
+$font-default:'Roboto',
+sans-serif;
+$borde:solid 1px rgb(233, 233, 233);
+$font-color: #292929;
+
+/***************** index.html **********************/
+
+$imagenes-carousel-publicidad:(
+    1:"../assets/imagen-principal-1.jpg",
+    2:"../assets/imagen-principal-2.jpg",
+    3:"../assets/imagen-principal-3.jpg",
+);
+
+$imagenes-novedades:(
+    imagen1:"",
+    imagen2:"",
+    imagen3:"",
+    imagen4:"",
+    imagen5:""
+);
+
+/***************** FIN index.html **********************/

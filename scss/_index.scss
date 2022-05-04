@@ -1,19 +1,31 @@
+@import 'variables';
+
 #grilla__index {
     display: grid;
     grid-template-areas:
-      "header"
-      "publicidad"
-      "novedades"
-      "atributos"
-      "footer";
-    grid-template-rows: minmax(60px, max-content) 1fr auto auto auto; 
+        "header"
+        "publicidad"
+        "novedades"
+        "atributos"
+        "footer";
+    grid-template-rows: minmax(60px, max-content) 1fr auto auto auto;
     grid-template-columns: 100%;
+
+    #carouselPublicidad {
+
+        @each $indice, $imagen in $imagenes-carousel-publicidad {
+            .imagen-#{$indice} {
+                // background-image: url($imagen);
+                content:url($imagen);
+            }
+        }
+    }
 
     #novedades {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    
+
     #atributos {
         max-width: 540px;
 
