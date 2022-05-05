@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***************** index.html **********************/
 /***************** FIN index.html **********************/
 * {
@@ -32,6 +33,7 @@ main {
 .cursor-pointer {
   cursor: pointer; }
 
+/******************* MIXINS ***********************/
 header {
   grid-area: header;
   background-color: rgba(251, 248, 241, 0.95);
@@ -61,8 +63,6 @@ header {
         header .header__menuDerecho button span {
           display: inline; } }
 
-/***************** index.html **********************/
-/***************** FIN index.html **********************/
 #grilla__index {
   display: grid;
   grid-template-areas: "header" "publicidad" "novedades" "atributos" "footer";
@@ -77,6 +77,14 @@ header {
   #grilla__index #novedades {
     margin-top: 40px;
     margin-bottom: 40px; }
+    #grilla__index #novedades .card .imagen-1 {
+      content: url("../assets/producto-A.jpg"); }
+    #grilla__index #novedades .card .imagen-2 {
+      content: url("../assets/bandolera-negra.jpg"); }
+    #grilla__index #novedades .card .imagen-3 {
+      content: url("../assets/riñonera_negra.jpg"); }
+    #grilla__index #novedades .card .imagen-4 {
+      content: url("../assets/mochi-small-negra.jpg"); }
   #grilla__index #atributos {
     max-width: 540px; }
     @media screen and (min-width: 992px) {
@@ -113,3 +121,5 @@ header {
   animation-duration: .5s; }
 
 /***************************** FIN TRANSICIONES Y ANIMACIONES ********************************/
+/***************************** MIXINS *******************************/
+/***************************** FIN MIXINS *******************************/

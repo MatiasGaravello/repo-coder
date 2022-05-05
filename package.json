@@ -1,11 +1,11 @@
 {
   "name": "repo-coder",
   "version": "1.0.0",
-  "description": "Aplicando SSAS",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/style.scss css/estilo-ssas.css",
+    "build-css": "node-sass --include-path scss scss/style.scss css/estilo-sass.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -21,6 +21,6 @@
   "homepage": "https://github.com/MatiasGaravello/repo-coder#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.16"
   }
 }

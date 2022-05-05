@@ -1,5 +1,3 @@
-@import 'variables';
-
 #grilla__index {
     display: grid;
     grid-template-areas:
@@ -12,18 +10,16 @@
     grid-template-columns: 100%;
 
     #carouselPublicidad {
-
-        @each $indice, $imagen in $imagenes-carousel-publicidad {
-            .imagen-#{$indice} {
-                // background-image: url($imagen);
-                content:url($imagen);
-            }
-        }
+        @include asigna-Imagenes($imagenes-carousel-publicidad);
     }
 
     #novedades {
         margin-top: 40px;
         margin-bottom: 40px;
+
+        .card {
+            @include asigna-Imagenes($imagenes-novedades);
+        }
     }
 
     #atributos {

@@ -37,3 +37,17 @@
 }
 
 /***************************** FIN TRANSICIONES Y ANIMACIONES ********************************/
+
+/***************************** MIXINS *******************************/
+
+// @mixin asigna-Imagenes($map-imagenes) {
+
+//     @each $indice,
+//     $imagen in $map-imagenes {
+//         .imagen-#{$indice} {
+//             content: url($imagen);
+//         }
+//     }
+// }
+
+/***************************** FIN MIXINS *******************************/

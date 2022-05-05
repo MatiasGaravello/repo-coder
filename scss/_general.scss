@@ -39,3 +39,16 @@ main {
 .cursor-pointer {
     cursor: pointer;
 }
+
+/******************* MIXINS ***********************/
+
+//función que permite asignar un map de imágenes a aquellas clases que cuyo nombre sea class-name
+@mixin asigna-Imagenes($map-imagenes) {
+
+    @each $class-name, $path-imagen in $map-imagenes {
+        .#{$class-name} {
+            content: url($path-imagen);
+        }
+    }
+}
+
