@@ -31,14 +31,24 @@ main {
     grid-area: main;
 }
 
-.imagen__con__borde {
+// .imagen__con__borde {
+//     border: $borde;
+//     border-radius: 6px;
+// }
+
+.imagen-redondeada {
+    border-radius: 2px;
+}
+
+.imagen-redondeada-con-borde {
+    @extend .imagen-redondeada;
     border: $borde;
-    border-radius: 6px;
 }
 
 .cursor-pointer {
     cursor: pointer;
 }
+
 
 /******************* MIXINS ***********************/
 

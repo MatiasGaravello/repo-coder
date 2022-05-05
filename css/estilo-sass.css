@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/***************** FOOTER **********************/
+/***************** FIN FOOTER **********************/
 /***************** index.html **********************/
 /***************** FIN index.html **********************/
 * {
@@ -26,9 +28,11 @@ li {
 main {
   grid-area: main; }
 
-.imagen__con__borde {
-  border: solid 1px #e9e9e9;
-  border-radius: 6px; }
+.imagen-redondeada, .imagen-redondeada-con-borde {
+  border-radius: 2px; }
+
+.imagen-redondeada-con-borde {
+  border: solid 1px #dee2e6; }
 
 .cursor-pointer {
   cursor: pointer; }
@@ -95,8 +99,27 @@ header {
       #grilla__index #atributos .card img {
         width: 50px; }
 
+/***************** FOOTER **********************/
+/***************** FIN FOOTER **********************/
 /***************** index.html **********************/
 /***************** FIN index.html **********************/
+#contenedor-producto {
+  max-width: 966px; }
+  @media screen and (min-width: 768px) {
+    #contenedor-producto {
+      margin: 5rem auto 0 auto; } }
+  #contenedor-producto #tarjeta-info-producto {
+    max-width: 450px; }
+    @media screen and (min-width: 768px) {
+      #contenedor-producto #tarjeta-info-producto {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); } }
+
+footer .col {
+  font-size: 1.2rem; }
+  footer .col a {
+    display: flex;
+    justify-content: end; }
+
 /***************************** TRANSICIONES Y ANIMACIONES ********************************/
 .transition-regular {
   transition: all 0.3s; }

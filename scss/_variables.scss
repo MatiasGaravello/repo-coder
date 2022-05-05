@@ -1,7 +1,17 @@
 $font-default:'Roboto',
 sans-serif;
-$borde:solid 1px rgb(233, 233, 233);
+$borde:solid 1px #dee2e6;
 $font-color: #292929;
+
+/***************** FOOTER **********************/
+
+$estilo-info-contacto: (
+    display:flex,
+    justify-content:end,
+    font-size:1.2rem
+);
+
+/***************** FIN FOOTER **********************/
 
 /***************** index.html **********************/
 
@@ -19,3 +29,4 @@ $imagenes-novedades:(
 );
 
 /***************** FIN index.html **********************/
+
