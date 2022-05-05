@@ -120,6 +120,10 @@ footer .col {
     display: flex;
     justify-content: end; }
 
+#main-contacto textarea {
+  resize: none;
+  height: 100px; }
+
 /***************************** TRANSICIONES Y ANIMACIONES ********************************/
 .transition-regular {
   transition: all 0.3s; }
