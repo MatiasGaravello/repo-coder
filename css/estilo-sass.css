@@ -131,6 +131,12 @@ footer .col {
     resize: none;
     height: 100px; }
 
+#contenedor-login {
+  max-width: 349px; }
+  @media screen and (min-width: 768px) {
+    #contenedor-login form {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); } }
+
 /***************************** TRANSICIONES Y ANIMACIONES ********************************/
 .transition-regular {
   transition: all 0.3s; }
