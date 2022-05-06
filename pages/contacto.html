@@ -17,7 +17,7 @@
     <title>BAGNA - contacto</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="container-fluid align-items-center sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light h-100">
             <div class="container-fluid row-cols-lg-3">
@@ -62,8 +62,8 @@
         </nav>
     </header>
     <main>
-        <div id="main-contacto" class="container-fluid pb-5 pt-5 col-md-6">
-            <h1 class="text-center mb-3 text-uppercase">Contacto</h1>
+        <div id="main-contacto" class="container-fluid mt-md-5 mb-md-5 pb-5 pt-5 ps-4 pe-4">
+            <h1 class="text-center mb-4 text-uppercase">Contacto</h1>
             <form action="" method="post" enctype="">
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="floatingNombre" placeholder="Nombre" required>
@@ -74,7 +74,8 @@
                     <label for="floatingApellido">Apellido</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingMail" placeholder="Correo electrónico" required>
+                    <input type="email" class="form-control" id="floatingMail" placeholder="Correo electrónico"
+                        required>
                     <label for="floatingMail">Correo electrónico</label>
                 </div>
                 <div class="form-floating">
@@ -82,21 +83,20 @@
                     <label for="floatingPhone">Celular</label>
                 </div>
                 <div class="container">
-                    <div class="row">
-                        <p class="text-center mt-3">Sexo</p>
-                    </div>
-                    <div class="row row-cols-3">
+                    <p class="text-center mt-3">Sexo</p>
+
+                    <div class="d-flex justify-content-around m-auto" id="contenedor-rdb-sexo">
                         <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
                         <label class="btn btn-outline-secondary" for="option1">Femenino</label>
-        
+
                         <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
                         <label class="btn btn-outline-secondary" for="option2">Masculino</label>
-        
+
                         <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
                         <label class="btn btn-outline-secondary" for="option3">No binario</label>
                     </div>
                 </div>
-                
+
 
                 <div class="form-floating mt-3">
                     <textarea class="form-control" placeholder="Deja tu mensaje" id="floatingTextarea"></textarea>
@@ -108,7 +108,7 @@
                     <button class="btn btn-primary p-3 text-uppercase" type="submit">Enviar</button>
                 </div>
 
-               
+
                 <!-- <fieldset>
                     <h1>Contacto</h1> 
                     
@@ -144,7 +144,7 @@
         </div>
 
     </main>
-    <footer>
+    <footer class="mt-auto">
         <div class="container-fluid pt-3 border-top text-center">
             <div class="row row-cols-2 justify-content-center justify-content-lg-end mb-5">
                 <div class="col col-auto text-end">
