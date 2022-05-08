@@ -137,6 +137,22 @@ footer .col {
     #contenedor-login form {
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); } }
 
+#main-carrito #contenedor-mobile {
+  max-width: 484px; }
+  @media screen and (min-width: 576px) {
+    #main-carrito #contenedor-mobile {
+      display: none; } }
+
+#main-carrito #contenedor-desktop {
+  display: none;
+  max-width: 706px; }
+  @media screen and (min-width: 576px) {
+    #main-carrito #contenedor-desktop {
+      display: block; } }
+  #main-carrito #contenedor-desktop table img {
+    width: 80px;
+    height: 90px; }
+
 /***************************** TRANSICIONES Y ANIMACIONES ********************************/
 .transition-regular {
   transition: all 0.3s; }
