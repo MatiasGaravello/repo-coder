@@ -177,5 +177,6 @@ footer .col {
   animation-duration: .5s; }
 
 /***************************** FIN TRANSICIONES Y ANIMACIONES ********************************/
-/***************************** MIXINS *******************************/
 /***************************** FIN MIXINS *******************************/
+#main__Tienda #contenedor-productos .col img {
+  height: 100%; }
