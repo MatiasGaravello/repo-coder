@@ -1,10 +1,19 @@
 footer {
+    background-color: #1F1F1F;
+    color: white;
+
     .col {
         font-size: map-get($estilo-info-contacto, font-size);
-
+        
         a {
             display: map-get($estilo-info-contacto, display);
             justify-content: map-get($estilo-info-contacto, justify-content);
+            color: #cdcdcd;
         }
     }
+
+    img {
+        max-width: 283px !important;
+    }
+
 }

@@ -28,6 +28,9 @@ li {
 main {
   grid-area: main; }
 
+svg {
+  fill: currentColor; }
+
 .imagen-redondeada, .imagen-redondeada-con-borde {
   border-radius: 2px; }
 
@@ -40,14 +43,15 @@ main {
 /******************* MIXINS ***********************/
 header {
   grid-area: header;
-  background-color: rgba(251, 248, 241, 0.95);
+  background-color: #fdcae4;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   width: 100%;
   z-index: 999;
   animation: fadeIn;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  color: #292929 !important; }
   header .header__logo {
-    width: 124px; }
+    width: 100px; }
     @media screen and (min-width: 768px) {
       header .header__logo {
         width: 140px; } }
@@ -114,11 +118,17 @@ header {
       #contenedor-producto #tarjeta-info-producto {
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); } }
 
-footer .col {
-  font-size: 1.2rem; }
-  footer .col a {
-    display: flex;
-    justify-content: end; }
+footer {
+  background-color: #1F1F1F;
+  color: white; }
+  footer .col {
+    font-size: 1.2rem; }
+    footer .col a {
+      display: flex;
+      justify-content: end;
+      color: #cdcdcd; }
+  footer img {
+    max-width: 283px !important; }
 
 #main-contacto {
   max-width: 545px; }

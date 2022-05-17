@@ -1,4 +1,6 @@
-$color-header:rgba(251, 248, 241, 0.95);
+// $color-header:rgba(251, 248, 241, 0.95);
+// $color-header:rgba(247, 237, 216, 0.95);
+$color-header:#fdcae4;
 
 header {
     grid-area:header;
@@ -8,9 +10,10 @@ header {
     z-index: 999;
     animation: fadeIn;
     animation-duration: 2s;
+    color: #292929 !important;
 
     .header__logo {
-        width: 124px;
+        width: 100px;
 
         @media screen and (min-width: 768px) {
             width: 140px;
