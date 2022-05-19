@@ -1,7 +1,19 @@
-$font-default:'Roboto',
-sans-serif;
-$borde:solid 1px #dee2e6;
+$font-default: 'Roboto',
+    sans-serif;
+$borde: solid 1px #dee2e6;
 $font-color: #292929;
+
+
+
+$colores: (
+    gris:#D0D5D9,
+    marron-oscuro:#594C3C,
+    marron-claro:#A6867B,
+    nude:#D9BEB4,
+    oxido:#8C5245
+
+);
+
 
 /***************** FOOTER **********************/
 
@@ -15,13 +27,13 @@ $estilo-info-contacto: (
 
 /***************** index.html **********************/
 
-$imagenes-carousel-publicidad:(
+$imagenes-carousel-publicidad: (
     imagen-1:"../assets/imagen-principal-1.jpg",
     imagen-2:"../assets/imagen-principal-2.jpg",
     imagen-3:"../assets/imagen-principal-3.jpg"
 );
 
-$imagenes-novedades:(
+$imagenes-novedades: (
     imagen-1:"../assets/producto-A.jpg",
     imagen-2:"../assets/bandolera-negra.jpg",
     imagen-3:"../assets/riñonera_negra.jpg",
@@ -29,4 +41,3 @@ $imagenes-novedades:(
 );
 
 /***************** FIN index.html **********************/
-

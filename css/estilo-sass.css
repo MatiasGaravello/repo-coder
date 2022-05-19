@@ -43,8 +43,8 @@ svg {
 /******************* MIXINS ***********************/
 header {
   grid-area: header;
-  background-color: #fdcae4;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(0deg, #a6867b 0%, #d9beb4 50%);
   width: 100%;
   z-index: 999;
   animation: fadeIn;
