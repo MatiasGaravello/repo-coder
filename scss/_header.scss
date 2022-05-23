@@ -1,11 +1,9 @@
-// $color-header:rgba(251, 248, 241, 0.95);
 $color-header: #d9beb4;
 
 header {
     grid-area: header;
-    // background-color: $color-header;
+    background-color: $color-header;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(0deg, rgba(166,134,123,1) 0%, rgba(217,190,180,1) 50%);
     width: 100%;
     z-index: 999;
     animation: fadeIn;
