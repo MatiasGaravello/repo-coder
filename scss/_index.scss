@@ -4,18 +4,22 @@
         "header"
         "publicidad"
         "novedades"
+        "productos"
         "atributos"
         "footer";
-    grid-template-rows: minmax(60px, max-content) 1fr auto auto auto;
+    grid-template-rows: minmax(60px, max-content) 1fr auto auto auto auto;
     grid-template-columns: 100%;
 
     #carouselPublicidad {
+        grid-area: publicidad;
         @include asigna-Imagenes($imagenes-carousel-publicidad);
     }
+
 
     #novedades {
         margin-top: 40px;
         margin-bottom: 40px;
+        grid-area: novedades;
 
         .card {
             @include asigna-Imagenes($imagenes-novedades);
@@ -24,6 +28,7 @@
 
     #atributos {
         max-width: 540px;
+        grid-area: atributos;
 
         @media screen and (min-width: 992px) {
             max-width: 800px;
@@ -36,5 +41,9 @@
                 width: 50px;
             }
         }
+    }
+
+    #productos {
+        grid-area: productos;
     }
 }

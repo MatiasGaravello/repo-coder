@@ -1,6 +1,7 @@
 footer {
     background-color: #1F1F1F;
     color: white;
+    grid-area: footer;
 
     .col {
         font-size: map-get($estilo-info-contacto, font-size);

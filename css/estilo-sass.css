@@ -50,6 +50,8 @@ header {
   animation: fadeIn;
   animation-duration: 2s;
   color: #292929 !important; }
+  header nav {
+    letter-spacing: 1px; }
   header .header__logo {
     width: 100px; }
     @media screen and (min-width: 768px) {
@@ -73,18 +75,21 @@ header {
 
 #grilla__index {
   display: grid;
-  grid-template-areas: "header" "publicidad" "novedades" "atributos" "footer";
-  grid-template-rows: minmax(60px, max-content) 1fr auto auto auto;
+  grid-template-areas: "header" "publicidad" "novedades" "productos" "atributos" "footer";
+  grid-template-rows: minmax(60px, max-content) 1fr auto auto auto auto;
   grid-template-columns: 100%; }
-  #grilla__index #carouselPublicidad .imagen-1 {
-    content: url("../assets/imagen-principal-1.jpg"); }
-  #grilla__index #carouselPublicidad .imagen-2 {
-    content: url("../assets/imagen-principal-2.jpg"); }
-  #grilla__index #carouselPublicidad .imagen-3 {
-    content: url("../assets/imagen-principal-3.jpg"); }
+  #grilla__index #carouselPublicidad {
+    grid-area: publicidad; }
+    #grilla__index #carouselPublicidad .imagen-1 {
+      content: url("../assets/imagen-principal-1.jpg"); }
+    #grilla__index #carouselPublicidad .imagen-2 {
+      content: url("../assets/imagen-principal-2.jpg"); }
+    #grilla__index #carouselPublicidad .imagen-3 {
+      content: url("../assets/imagen-principal-3.jpg"); }
   #grilla__index #novedades {
     margin-top: 40px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    grid-area: novedades; }
     #grilla__index #novedades .card .imagen-1 {
       content: url("../assets/producto-A.jpg"); }
     #grilla__index #novedades .card .imagen-2 {
@@ -94,7 +99,8 @@ header {
     #grilla__index #novedades .card .imagen-4 {
       content: url("../assets/mochi-small-negra.jpg"); }
   #grilla__index #atributos {
-    max-width: 540px; }
+    max-width: 540px;
+    grid-area: atributos; }
     @media screen and (min-width: 992px) {
       #grilla__index #atributos {
         max-width: 800px; } }
@@ -102,6 +108,8 @@ header {
       font-size: 0.8rem; }
       #grilla__index #atributos .card img {
         width: 50px; }
+  #grilla__index #productos {
+    grid-area: productos; }
 
 /***************** FOOTER **********************/
 /***************** FIN FOOTER **********************/
@@ -120,12 +128,13 @@ header {
 
 footer {
   background-color: #1F1F1F;
-  color: white; }
+  color: white;
+  grid-area: footer; }
   footer .col {
     font-size: 1.2rem; }
     footer .col a {
       display: flex;
-      justify-content: end;
+      justify-content: center;
       color: #cdcdcd; }
   footer img {
     max-width: 283px !important; }
