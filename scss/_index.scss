@@ -45,5 +45,12 @@
 
     #productos {
         grid-area: productos;
+
+        .card {
+            letter-spacing: 4px;
+            img {
+                filter: brightness(50%);
+            }
+        }
     }
 }

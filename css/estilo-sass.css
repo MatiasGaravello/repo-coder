@@ -110,6 +110,10 @@ header {
         width: 50px; }
   #grilla__index #productos {
     grid-area: productos; }
+    #grilla__index #productos .card {
+      letter-spacing: 4px; }
+      #grilla__index #productos .card img {
+        filter: brightness(50%); }
 
 /***************** FOOTER **********************/
 /***************** FIN FOOTER **********************/
