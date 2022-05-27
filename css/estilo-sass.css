@@ -92,7 +92,8 @@ header {
   #grilla__index #novedades {
     margin-top: 40px;
     margin-bottom: 40px;
-    grid-area: novedades; }
+    grid-area: novedades;
+    max-width: 1140px; }
     #grilla__index #novedades .row .card {
       background-color: #D0D5D9; }
       #grilla__index #novedades .row .card .imagen-1 {
@@ -105,16 +106,22 @@ header {
         content: url("../assets/mochi-small-negra.png"); }
   #grilla__index #productos {
     grid-area: productos; }
-    #grilla__index #productos .card {
-      letter-spacing: 4px;
-      max-width: 500px; }
-      #grilla__index #productos .card img {
-        filter: brightness(50%); }
+    #grilla__index #productos .row {
+      width: 85%; }
+      #grilla__index #productos .row .card {
+        letter-spacing: 4px;
+        max-width: 500px; }
+        #grilla__index #productos .row .card img {
+          filter: brightness(50%); }
   #grilla__index #atributos {
-    grid-area: atributos; }
+    grid-area: atributos;
+    margin-top: 40px;
+    margin-bottom: 60px; }
     @media screen and (min-width: 992px) {
       #grilla__index #atributos {
-        max-width: 800px; } }
+        max-width: 900px;
+        margin-top: 80px;
+        margin-bottom: 70px; } }
     #grilla__index #atributos .card {
       font-size: 0.8rem; }
       #grilla__index #atributos .card img {
@@ -197,12 +204,28 @@ footer {
   -ms-transform: scale(1.2);
   transform: scale(1.2); }
 
+.fade-in:hover {
+  filter: opacity(0.5); }
+
 .border-fade:hover {
   border: 1px solid #0d6efd !important; }
 
 .fadeInLeft {
   animation: fadeInLeft;
   animation-duration: .5s; }
+
+/* efecto zoom*/
+.img-hover-zoom {
+  overflow: hidden;
+  /* [1.2] Hide the overflowing of child elements */ }
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease; }
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5); }
 
 /***************************** FIN TRANSICIONES Y ANIMACIONES ********************************/
 /***************************** FIN MIXINS *******************************/
