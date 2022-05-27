@@ -40,6 +40,9 @@ svg {
 .cursor-pointer {
   cursor: pointer; }
 
+.letter-spacing-1 {
+  letter-spacing: 2px; }
+
 /******************* MIXINS ***********************/
 header {
   grid-area: header;
@@ -90,16 +93,24 @@ header {
     margin-top: 40px;
     margin-bottom: 40px;
     grid-area: novedades; }
-    #grilla__index #novedades .card .imagen-1 {
-      content: url("../assets/producto-A.jpg"); }
-    #grilla__index #novedades .card .imagen-2 {
-      content: url("../assets/bandolera-negra.jpg"); }
-    #grilla__index #novedades .card .imagen-3 {
-      content: url("../assets/riñonera_negra.jpg"); }
-    #grilla__index #novedades .card .imagen-4 {
-      content: url("../assets/mochi-small-negra.jpg"); }
+    #grilla__index #novedades .row .card {
+      background-color: #D0D5D9; }
+      #grilla__index #novedades .row .card .imagen-1 {
+        content: url("../assets/producto-A.png"); }
+      #grilla__index #novedades .row .card .imagen-2 {
+        content: url("../assets/bandolera-negra.png"); }
+      #grilla__index #novedades .row .card .imagen-3 {
+        content: url("../assets/riñonera_negra.png"); }
+      #grilla__index #novedades .row .card .imagen-4 {
+        content: url("../assets/mochi-small-negra.png"); }
+  #grilla__index #productos {
+    grid-area: productos; }
+    #grilla__index #productos .card {
+      letter-spacing: 4px;
+      max-width: 500px; }
+      #grilla__index #productos .card img {
+        filter: brightness(50%); }
   #grilla__index #atributos {
-    max-width: 540px;
     grid-area: atributos; }
     @media screen and (min-width: 992px) {
       #grilla__index #atributos {
@@ -108,12 +119,6 @@ header {
       font-size: 0.8rem; }
       #grilla__index #atributos .card img {
         width: 50px; }
-  #grilla__index #productos {
-    grid-area: productos; }
-    #grilla__index #productos .card {
-      letter-spacing: 4px; }
-      #grilla__index #productos .card img {
-        filter: brightness(50%); }
 
 /***************** FOOTER **********************/
 /***************** FIN FOOTER **********************/

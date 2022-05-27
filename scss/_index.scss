@@ -21,13 +21,28 @@
         margin-bottom: 40px;
         grid-area: novedades;
 
+        .row {
+            .card {
+                @include asigna-Imagenes($imagenes-novedades);
+                background-color: map-get($colores, gris);
+            }
+        }
+    }
+
+    #productos {
+        grid-area: productos;
+
         .card {
-            @include asigna-Imagenes($imagenes-novedades);
+            letter-spacing: 4px;
+            max-width: 500px;
+
+            img {
+                filter: brightness(50%);
+            }
         }
     }
 
     #atributos {
-        max-width: 540px;
         grid-area: atributos;
 
         @media screen and (min-width: 992px) {
@@ -43,14 +58,5 @@
         }
     }
 
-    #productos {
-        grid-area: productos;
 
-        .card {
-            letter-spacing: 4px;
-            img {
-                filter: brightness(50%);
-            }
-        }
-    }
 }
