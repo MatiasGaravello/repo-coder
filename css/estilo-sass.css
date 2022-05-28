@@ -43,6 +43,14 @@ svg {
 .letter-spacing-1 {
   letter-spacing: 2px; }
 
+.btn-primary {
+  background-color: #8C5245;
+  border-color: #8C5245; }
+
+.btn-secondary {
+  background-color: #1F1F1F;
+  border-color: #1F1F1F; }
+
 /******************* MIXINS ***********************/
 header {
   grid-area: header;
@@ -145,7 +153,8 @@ header {
 footer {
   background-color: #1F1F1F;
   color: white;
-  grid-area: footer; }
+  grid-area: footer;
+  margin-top: auto; }
   footer .col {
     font-size: 1.2rem; }
     footer .col a {
