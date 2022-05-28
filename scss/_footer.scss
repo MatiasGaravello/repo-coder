@@ -1,12 +1,12 @@
 footer {
-    background-color: #1F1F1F;
+    background-color: map-get($colores, dark);
     color: white;
     grid-area: footer;
     margin-top: auto;
 
     .col {
         font-size: map-get($estilo-info-contacto, font-size);
-        
+
         a {
             display: map-get($estilo-info-contacto, display);
             justify-content: map-get($estilo-info-contacto, justify-content);

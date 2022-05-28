@@ -149,6 +149,8 @@ header {
     @media screen and (min-width: 768px) {
       #contenedor-producto #tarjeta-info-producto {
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); } }
+    #contenedor-producto #tarjeta-info-producto .card-body {
+      background-color: #f5f3f3; }
 
 footer {
   background-color: #1F1F1F;

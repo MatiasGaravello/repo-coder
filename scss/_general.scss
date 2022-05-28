@@ -58,8 +58,8 @@ svg {
 }
 
 .btn-secondary {
-    background-color: #1F1F1F;
-    border-color: #1F1F1F;
+    background-color: map-get($colores,dark);
+    border-color:map-get($colores,dark);
 }
 
 /******************* MIXINS ***********************/
